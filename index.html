@@ -4,64 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kavya Mandi's Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <header class="bg-dark text-white text-center py-3">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <a class="navbar-brand" href="#home">Kavya Mandi</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <section id="home">
-        <h1>Kavya Mandi</h1>
-        <p>Dynamic and driven B.Tech CSE pre-final year student with a passion for web development, machine learning, and project management.</p>
-    </section>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Brief bio and technical skills...</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Hospital Management System</h3>
-            <p>Technologies: React, MongoDB, Express, Node, SocketIO, Redux</p>
-            <p>Description: Effortlessly manage hospital tasks with our user-friendly website.</p>
-            <a href="https://github.com/kavya-reddii">GitHub Link</a>
+    <section id="home" class="d-flex align-items-center text-center">
+        <div class="container">
+            <h1 class="display-4">Kavya Mandi</h1>
+            <p class="lead">Dynamic and driven B.Tech CSE pre-final year student with a passion for web development, machine learning, and project management.</p>
         </div>
     </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <p>Details about internships and achievements...</p>
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">About Me</h2>
+            <p class="text-center">I am a pre-final year Computer Science Engineering student at Sree Vidyanikethan Engineering College with a CGPA of 9.49. I am passionate about technology and have developed numerous projects in web development and machine learning. My technical skills include Java, Python, HTML, CSS, JavaScript, and more.</p>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <form action="https://formspree.io/f/{your_form_id}" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Projects</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Hospital Management System</h3>
+                            <p class="card-text">Technologies: React, MongoDB, Express, Node, SocketIO, Redux</p>
+                            <p class="card-text">Effortlessly manage hospital tasks with our user-friendly website.</p>
+                            <a href="https://github.com/kavya-reddii/Hospital-Management-System" target="_blank" class="btn btn-primary">GitHub Link</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
     </section>
 
-    <footer>
+    <section id="experience" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>Salesforce Developer (Aug 2023 – Oct 2023)</h4>
+                    <p>Virtual Internship on a Customer Relations Management System. Created custom objects, automated business processes, and resolved bugs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Contact</h2>
+            <form action="https://formspree.io/f/{your_form_id}" method="POST" class="mx-auto" style="max-width: 600px;">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
         <p>Connect with me:</p>
-        <a href="https://www.linkedin.com/in/kavyareddy21052004/">LinkedIn</a>
-        <a href="https://github.com/kavya-reddii">GitHub</a>
-        <a href="https://leetcode.com/u/KavyaX/">LeetCode</a>
+        <a href="https://www.linkedin.com/in/kavyareddy21052004/" target="_blank" class="text-white mx-2">LinkedIn</a>
+        <a href="https://github.com/kavya-reddii" target="_blank" class="text-white mx-2">GitHub</a>
+        <a href="https://leetcode.com/u/KavyaX/" target="_blank" class="text-white mx-2">LeetCode</a>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
